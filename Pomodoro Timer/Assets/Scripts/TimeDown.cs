@@ -6,7 +6,6 @@ public class TimeDown : MonoBehaviour
 {
     public float timeValue = 90;
     public Text timerText;
-    public Text StartBtnText;
     private bool activateTimer;
     private Button button;
 
@@ -35,7 +34,9 @@ public class TimeDown : MonoBehaviour
             }
             else
             {
-                timeValue = 0;
+                activateTimer = false;
+                
+                timeValue = 90;
             }
             DisplayTime(timeValue);
 
